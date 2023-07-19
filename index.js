@@ -11,7 +11,7 @@ app.use(cookieParser());
 app.use(express.json());
 app.use(
   cors({
-    origin: "https://mernjwtsetup.netlify.app",
+    origin: ["https://jwtbackend-6f5c.onrender.com", "http://localhost:3000"],
     methods: ["POST", "GET"],
     credentials: true,
   })
